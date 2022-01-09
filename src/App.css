@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+    outline: none;
+    border: 0;
+    cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+    font-size: 2rem;
+    padding: 1em;
+    background-color: blanchedalmond;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-count {
+    display: inline-block;
+    text-align: center;
+    font-size: 2rem;
+    width: 2.5rem;
+    line-height: 2.5rem;
+    margin-left: .2em;
+    background-color: greenyellow;
+    color:white;
+    border-radius: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.habit {
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.habit-button {
+    font-size: 2.5rem;
+    margin: 0 0.1em;
+    background-color: transparent;
+}
+
+.habit-button:hover {
+    opacity: 0.8;
+}
+
+.habit-increase, .habit-decrease {
+    color: green;
+}
+
+.habit-delete {
+    color: red;
+}
+
+.habit-count {
+    display: inline-block;
+    width: 3rem;
+    text-align: center;
+    /* vertical-align: middle; */
+    background-color: greenyellow;
+    border-radius: 50%;
+    
 }
